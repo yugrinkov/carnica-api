@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "journals",
+  "info": {
+    "name": "journals",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "date"
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "externalCheckout": {
+      "type": "string"
+    }
+  }
+}
