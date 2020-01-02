@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "homepages",
+  "info": {
+    "name": "homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "heroImageBanner": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "heroImageTitle": {
+      "type": "string"
+    },
+    "heroImageSubtitle": {
+      "type": "string"
+    }
+  }
+}
