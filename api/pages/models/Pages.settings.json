@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "pages",
+  "info": {
+    "name": "pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "linkText": {
+      "type": "string"
+    },
+    "linkReference": {
+      "type": "string"
+    },
+    "linkTarget": {
+      "enum": [
+        "_self",
+        "_blank"
+      ],
+      "type": "enumeration"
+    }
+  }
+}
