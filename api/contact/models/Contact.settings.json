@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "contacts",
+  "info": {
+    "name": "contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
