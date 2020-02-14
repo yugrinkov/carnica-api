@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/partnershippages",
+      "handler": "Partnershippage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/partnershippages/count",
+      "handler": "Partnershippage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/partnershippages/:id",
+      "handler": "Partnershippage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/partnershippages",
+      "handler": "Partnershippage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/partnershippages/:id",
+      "handler": "Partnershippage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/partnershippages/:id",
+      "handler": "Partnershippage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

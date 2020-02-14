@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "clubpages",
+  "info": {
+    "name": "clubpage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "heroImageBanner": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "heroImageTitle": {
+      "type": "string"
+    },
+    "heroImageSubtitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clubpages",
+      "handler": "Clubpage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clubpages/count",
+      "handler": "Clubpage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clubpages/:id",
+      "handler": "Clubpage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clubpages",
+      "handler": "Clubpage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clubpages/:id",
+      "handler": "Clubpage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clubpages/:id",
+      "handler": "Clubpage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
