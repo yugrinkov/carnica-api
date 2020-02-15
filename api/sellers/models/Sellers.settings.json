@@ -16,6 +16,10 @@
     },
     "phone": {
       "type": "string"
+    },
+    "product": {
+      "model": "products",
+      "via": "sellers"
     }
   }
 }
