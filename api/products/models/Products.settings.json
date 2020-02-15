@@ -23,9 +23,9 @@
     "priceLabel": {
       "type": "string"
     },
-    "sellers": {
-      "collection": "sellers",
-      "via": "product"
+    "seller": {
+      "model": "sellers",
+      "via": "products"
     }
   }
 }

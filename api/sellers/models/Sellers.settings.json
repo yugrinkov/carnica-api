@@ -17,9 +17,9 @@
     "phone": {
       "type": "string"
     },
-    "product": {
-      "model": "products",
-      "via": "sellers"
+    "products": {
+      "collection": "products",
+      "via": "seller"
     }
   }
 }
