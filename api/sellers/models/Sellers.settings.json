@@ -16,10 +16,6 @@
     },
     "phone": {
       "type": "string"
-    },
-    "products": {
-      "collection": "products",
-      "via": "seller"
     }
   }
 }
