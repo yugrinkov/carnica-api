@@ -38,6 +38,12 @@
     },
     "sectionText": {
       "type": "text"
+    },
+    "hotProposalTitle": {
+      "type": "string"
+    },
+    "hotProposalText": {
+      "type": "text"
     }
   }
 }
