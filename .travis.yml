@@ -1,13 +1,14 @@
 language: node_js
 node_js:
-- stable
+  - stable
 cache:
   directories:
-  - node_modules
+    - node_modules
 script:
-- npm run build
+  - npm run build
 deploy:
   provider: heroku
+  skip_cleanup: true
   api_key:
     secure: jvffDNHcVj2hpS48B6EFRE1TO9K38XH0LDbdtcnLsiw4NNc+NjL1lU/L6vfwgOlNVVx3KKhUcKSxtcFm2i/Zand+hxJyBJQDflO5YNdnKP/PPxA/ZfYg0kK4HJ1Gmp46XM1B5r8m6LfGYNtmo12wOeK5qSfhZH5Ncr6SxjaGiWA3ABqMDC8mhUNdbuPMMeNO3YHvJAavYvVkU+lm8jcM9GrcH15z7jJtGmumLY/t3oJl3ZF0XTOpwTF8DlUCRGt7OAKrp1Utur/7NkOrM7ueN+/R2FHa8sOin3kNOzggF7DVTl2wpCiqnpXRfjEejFk5DuDlJ+x0Qv/UYImn5K5gfaX3hDGBW84jw3o/cAPQKsUsRM2rc9PbL1ZV6rbag6zvpDS+1dmL+avgsEbu9HhU3kMmvyrqJlRf9QqCW2B3bwia/cLcfaIgYQI9G4Xuz/dkNoKFnqXLzC399QnqDSyvF/ID6HJFIcDskXWc/nfLTzlDB5lvwnCVS8uxDP1WPOr68UU3ZXPYJA6V1PKUwS77HjUpmGiReoph7Y6rzCVUsYsnns/6Ncbg+4K4u5/xRjgzvr6VpinMC+rucIwgQkrOCz0AaUniZE/IdfOMSU44G7O+KG/66NjOOhSVETLRbaEyNGGTqP8sWQ8o1STCK6kjS8Uj+dO0Jg/lIGY5wC0okKA=
   app: intense-sands-31533
