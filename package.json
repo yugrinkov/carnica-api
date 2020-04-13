@@ -5,8 +5,8 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "npm run prepare && strapi start",
-    "build": "strapi build",
+    "start": "strapi start",
+    "build": "npm run prepare && strapi build",
     "strapi": "strapi",
     "prepare": "node saveToken.js"
   },

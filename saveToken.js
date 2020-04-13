@@ -3,8 +3,8 @@ const travisToken = process.env.TRAVIS_API_TOKEN;
 
 if (travisToken) {
   fs.writeFile(
-    `public/data.json`,
-    JSON.stringify({ token: process.env.TRAVIS_API_TOKEN }),
+    `admin/src/containers/Admin/token.js`,
+    `window.token = ${process.env.TRAVIS_API_TOKEN}`,
     "utf8",
     (err) => {}
   );

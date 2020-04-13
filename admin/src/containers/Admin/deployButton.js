@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const DeployButton = (props) => {
-  const [token, setToken] = useState(null);
+  /*const [token, setToken] = useState(null);
   useEffect(() => {
     axios.get("/data.json").then((response) => {
       setToken(response.data.token);
     });
-  }, []);
+  }, []); */
   const onClickHandler = () => {
     const data = {
       request: {
@@ -15,7 +15,7 @@ const DeployButton = (props) => {
       },
     };
 
-    console.log("token", token);
+    console.log("token", window.token);
 
     /*axios
       .post(
@@ -35,8 +35,35 @@ const DeployButton = (props) => {
       }); */
   };
   return (
-    <div>
-      <button onClick={onClickHandler}>Deploy</button>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <button
+        style={{
+          height: "3rem",
+          position: "relative",
+          whiteSpace: "nowrap",
+          marginRight: "1.8rem",
+          lineHeight: "26px",
+          fontSize: "13px",
+          cursor: "pointer",
+          fontFamily: "Lato",
+          minWidth: "14rem",
+          paddingLeft: "1.6rem",
+          paddingRight: "1.6rem",
+          fontWeight: "500",
+          color: "white",
+          borderRadius: "0.3rem",
+          background: "#dc3545",
+        }}
+        onClick={onClickHandler}
+      >
+        Run Deploy
+      </button>
     </div>
   );
 };

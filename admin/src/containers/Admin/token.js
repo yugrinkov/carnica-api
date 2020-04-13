@@ -1,1 +1,1 @@
-window.travisAPIToken = "bred";
+window.token = "bred";
