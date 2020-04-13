@@ -5,9 +5,10 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "npm run prepare && strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "prepare": "node saveToken.js"
   },
   "devDependencies": {},
   "dependencies": {

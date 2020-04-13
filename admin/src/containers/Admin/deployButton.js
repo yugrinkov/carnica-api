@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const DeployButton = (props) => {
+  const [token, setToken] = useState(null);
+  useEffect(() => {
+    axios.get("/data.json").then((response) => {
+      setToken(response.data.token);
+    });
+  }, []);
   const onClickHandler = () => {
     const data = {
       request: {
@@ -9,7 +15,7 @@ const DeployButton = (props) => {
       },
     };
 
-    console.log("here", process.env);
+    console.log("token", token);
 
     /*axios
       .post(
@@ -20,7 +26,7 @@ const DeployButton = (props) => {
             "Content-Type": "application/json",
             Accept: "application/json",
             "Travis-API-Version": "3",
-            Authorization: "token",
+            Authorization: "token ${token}",
           },
         }
       )
