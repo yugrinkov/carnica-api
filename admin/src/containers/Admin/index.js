@@ -49,6 +49,8 @@ import saga from "./saga";
 import Wrapper from "./Wrapper";
 import Content from "./Content";
 
+import "./token";
+
 export class Admin extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
 
