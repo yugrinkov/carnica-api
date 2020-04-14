@@ -63,6 +63,7 @@ const DeployButton = (props) => {
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
