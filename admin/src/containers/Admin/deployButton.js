@@ -49,12 +49,13 @@ const DeployButton = (props) => {
       },
     };
 
+    setLoading(true);
+
     axios
       .post(apiUrl, data, {
         headers,
       })
       .then((response) => {
-        setLoading(true);
         polling(response.data.request.id);
       });
   };
