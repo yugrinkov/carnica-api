@@ -1,14 +1,16 @@
 language: node_js
 node_js:
-  - stable
+- '12'
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm run build
+- npm run build
 deploy:
   provider: heroku
-  skip_cleanup: true
   api_key:
-    secure: KIwT8fgxX4ye6Wy5ZG3P8ay2RnWtKCGUgRk+QwwouZ5WoPxfq1yLGP/i+t9V/2lMOl704EXsXE/Jaa1O2yEmEEHqnPZtImFdMFkcRDORJ7ch63zVm1R7w7IoIG1y77GeuhyZdH6wi5uHnqGbiH7OH5UtDZE4a36UQJTFLxKq3La5s2tIZfmcKFIj284IHitZWEawYktn4xoPTZWcCL73ts7SCKN2/tO336dP1Ab4VWA82ZhSq+0kRAzaezGOkmuaX9gbsyN22hoWKzu3tWoTk8yP15CvYyySubfLUkSjmGeGPQhmwskahyZckUrlMD+5hLqiT7WnX1aLpQOgdAaB8ROzWX4KKGEpq1byOpUvxTrkvXXEF3uIVYPINUPsa1eMVxheQynukC50fcFzbQLVUAk2GGaZCTHbnpRZ8CUT9s1gSq6NHRrfXe0PiiI/nRaA36XiKTBKGY39W6pKkYVomo2k1lxz3OqCp8vA12xxwfLDnZWfXBF5AsE5+f9D8ie/0Cx2drfsn0KGixIKOUccEt48NryM3tPdhsznpIz3xKvpaL40cYAR58uPnDErAT8WDEt/LliNxx+XZu7uaBg+oKz3pL1762UyGLTfw2vFQcZ5odMeO47v3mE5FYSY7944QlGh8myF8e0El60RM//QI4f4F/DLIYXdmMFCNqS5gWw=
+    secure: FkKrMb/csjp9nD9NF9zypsYeW9CMpqvkoV1ixuppcV9Vjo3ouNcfoULqXJK6j9XppXTXGs00QQO51/9K87PLUJ3GQCYCpWMkjtreuLEG4Zgpm2HeyBBRAurVmkh21TyhzSIXqx7g/x7GnBaDY8mvcShCuddBMBzC7QZESGR5QzN5q6ErJaSNEunW5XCt3K9/9UCNwT8ARMA7bQ5PZ+TUKbRoFLoj1rGhu3pxNP1Jk0lnLyVb7PVeYWfnDut9RBtsnWYyyIHlrAz8IqgpdZ9W1FwJntX8iW3JSlS/EjV24PFS5UcjF3a+PZKDveBvmHRs4yAb+7Araq22Pt1UsZ29/I6VkKEpU5pdWj5oCz/dql34dSJu3vnv+yYukORu0ZPOp0GJIvoZSrqkRbtxY/msYX6txWVwpVQjLqhI+2DLLJwnp0O5I4ugtXHvZ0herObBcbzOzRlyDZzB4+T0H9fDUrgaFsE2nqG1LGorqUEFfBUZOWzNy+MtmM3YfDabWLhxt16ypgplVQDe+2Rjr4l+8cSLDEN5TAVZyAQdTL3b3JWh/fJKz1RvCyURSU1AYp3HofhIZv99ZSLMi/my4C7/ujxyTNXyeJwIsYt6D+wG9n61MX5pgLFJau7x3ILrDx/7pLbKc2n9C/mAM0UOxyyHf7ntqQwffe5U0seZhDLyLjk=
   app: intense-sands-31533
+  on:
+    repo: yugrinkov/carnica-api
+  skip_cleanup: 'true'
